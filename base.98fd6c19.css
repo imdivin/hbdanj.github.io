@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	--color-text: #a5a5a5;
+	--color-bg: #191613;
+	--color-link: #d6af7c;
+	--color-link-hover: #fff;
+	--color-text-circle-1: #48423c;
+	--color-text-circle-2: #48423c;
+	--color-text-circle-3: #48423c;
+	--color-text-circle-4: #48423c;
+	--font-circle-1: ivymode, sans-serif;
+	--font-weight-circle-1: 300;
+	--font-circle-2: modesto-condensed, serif;
+	--font-weight-circle-2: 400;
+	--font-circle-3: minerva-modern, sans-serif;
+	--font-weight-circle-3: 400;
+	--font-circle-4: niagara, serif;
+	--font-weight-circle-4: 300;
+	--color-button: #d6ae7c;
+	--color-text-button: #1d1812;
+	--dim-button: 90px;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: tenon, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.demo-2 {
+	--color-text: #a5a5a5;
+	--color-bg: #000000;
+	--color-link: #ea34a6;
+	--color-link-hover: #fff;
+	--color-font-circle: #7b7772;
+	--color-button: #ea34a6;
+	--color-text-button: #000000;
+	--color-text-circle-1: #ea34a6;
+	--color-text-circle-2: #422163;
+	--color-text-circle-3: #212044;
+	--color-text-circle-4: #292725;
+	--font-circle-1: niagara, serif;
+	--font-weight-circle-1: 300;
+	--font-circle-2: ambroise-firmin-std, serif;
+	--font-weight-circle-2: 300;
+	--font-circle-3: modesto-condensed, serif;
+	--font-weight-circle-3: 400;
+	--font-circle-4: niagara, serif;
+	--font-weight-circle-4: 300;
+}
+
+.demo-3 {
+	width: 100%;
+	--color-text: #292725;
+	--color-bg: #fbff00;
+	--color-link: #a99c90;
+	--color-link-hover: #292725;
+	--color-font-circle: #7b7772;
+	--color-button: #ff0080;
+	--color-text-button: rgb(255, 255, 255);
+	--color-text-circle-1: #b18ab1;
+	--color-text-circle-2: #ffffff;
+	--color-text-circle-3: #b18ab1;
+	--color-text-circle-4: #ffffff;
+	--font-circle-1: modesto-condensed, serif;
+	--font-weight-circle-1: 400;
+	--font-circle-2: ambroise-firmin-std, serif;
+	--font-weight-circle-2: 300;
+	--font-circle-3: modesto-condensed, serif;
+	--font-weight-circle-3: 400;
+	--font-circle-4: niagara, sans-serif;
+	--font-weight-circle-4: 300;
+}
+
+.monkeys{
+	opacity: 50%;
+	height: 50%;
+	width: 50%;
+	float: left;
+}
+
+	section{
+	height:100%;
+	width:100%;
+	  position:absolute ;  background:radial-gradient(#333,#000);
+	}
+	.leaf{
+		position:absolute ;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+	}
+	.leaf div{
+	position:absolute ;
+	display:block ;
+	}
+	.leaf div:nth-child(1){
+		left:20%; 
+		animation:fall 15s linear infinite ;
+		animation-delay:-2s;
+	
+	}
+	.leaf div:nth-child(2){
+		left:70%; 
+		animation:fall 15s linear infinite ;
+		animation-delay:-4s;
+	}
+	.leaf div:nth-child(3){
+		left:10%; 
+		animation:fall 20s linear infinite ;
+		animation-delay:-7s;
+		
+	}
+	.leaf div:nth-child(4){
+		left:50%; 
+	   animation:fall 18s linear infinite ; 
+	   animation-delay:-5s;
+	}
+	.leaf div:nth-child(5){
+		left:85%; 
+		animation:fall 14s linear infinite ;
+		animation-delay:-5s;
+	}
+	.leaf div:nth-child(6){
+		left:15%; 
+		animation:fall 16s linear infinite ;
+		animation-delay:-10s;
+	}
+	.leaf div:nth-child(7){
+		left:90%; 
+		animation:fall 15s linear infinite ;
+		animation-delay:-4s;
+	}
+	
+	@keyframes fall{
+		0%{
+			opacity:1;
+			top:-10%;
+			transform:translateX (20px) rotate(0deg);
+		}
+		20%{
+			opacity:0.8;
+			transform:translateX (-20px) rotate(45deg);
+		}
+		40%{
+	
+			transform:translateX (-20px) rotate(90deg);
+		}
+		60%{
+			
+		   transform:translateX (-20px) rotate(135deg); 
+		}
+		80%{
+		
+			transform:translateX (-20px) rotate(180deg);
+		}
+		100%{
+			
+			top:110%;
+			transform:translateX (-20px) rotate(225deg);
+		}
+		}
+	.leaf1{
+		transform: rotateX(180deg);
+	}
+	
+.hbd{
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 5%);
+	font-size:120px;
+	  letter-spacing:0.1em;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+	text-shadow: 
+						  8px 8px #ff1f8f,
+						  20px 20px #000000;
+  }
+
+  .peach{
+	display: flex;
+      max-width: 1920px;
+      height: 800px;
+      width: 100%;
+      border-color: rgba(255, 255, 255, 1);
+      border-width: 0px;
+      border-style: solid;
+      background-color: #FFE5B4;
+}
+
+
+.lavender{
+	display: flex;
+      max-width: 1920px;
+      height: 1000px;
+      width: 100%;
+      border-color: rgba(255, 255, 255, 1);
+      border-width: 0px;
+      border-style: solid;
+      background-color: #D7B4F3;
+	  
+}
+
+.prettytitle{
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	text-align: center;
+	font-size:80px;
+	  letter-spacing:0.1em;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+	text-shadow: 
+						  8px 8px #D7B4F3,
+						  20px 20px #000000;
+}
+
+@import "compass/css3";
+
+* {
+  box-sizing: border-box;
+}
+
+
+::selection {
+  background-color: #ffffff;
+}
+
+.tabbed {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.tabbed > input {
+  display: none;
+}
+
+.tabbed > label {
+	margin-top: 250px;
+  display: block;
+  float: left;
+  padding: 12px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+  background: #522279;
+}
+
+.tabs {
+  clear: both;
+  perspective: 200px;
+}
+
+.tabs > div {
+  width: 700px;
+  position: absolute;
+  border: 2px solid #ffffff;
+  padding: 10px 30px 40px;
+  line-height: 1.4em;
+  opacity: 0;
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+  transition: opacity .3s, transform 1s;
+  z-index: 0;
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .tabbed { width: 400px }
+  .tabbed > label { display: none }
+  .tabs > div {
+    width: 400px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .tabs > div h2 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: .5em;
+  }
+}
+
+.pic1{
+	height: 50%;
+	width: 50%;
+}
+
+
+
+
+
+/* Page Loader */
+.js body::before,
+.js body::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+	transition: opacity 0.3s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.js body::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js body::after {
+	content: 'Loading';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	line-height: 1;
+	color: var(--color-link);
+}
+
+.js .loading::before,
+.js .loading::after {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+	background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+	/* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+	background: transparent;
+}
+
+a:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid red;
+	background: transparent;
+}
+
+.frame {
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	font-weight: 500;
+	will-change: transform;
+}
+
+.js .frame {
+	opacity: 0;
+}
+
+.frame__title {
+	font-size: 1rem;
+	margin: 0 0 1rem;
+	font-weight: 500;
+}
+
+.frame__links {
+	display: inline;
+}
+
+.frame__links a:not(:last-child),
+.frame__demos a:not(:last-child) {
+	margin: 0 1rem 0 0;
+}
+
+.frame__demos {
+	margin: 1rem 0;
+}
+
+.frame__demo--current,
+.frame__demo--current:hover {
+	color: var(--color-text);
+}
+
+.enter {
+	display: block;
+	border: 0;
+	width: var(--dim-button);
+	height: var(--dim-button);
+	position: absolute;
+	left: calc(50% - var(--dim-button) / 2 );
+	top: calc(50% - var(--dim-button) / 2 );
+	font: inherit;
+	font-weight: 500;
+	cursor: pointer;
+	background: none;
+	color: var(--color-text-button);
+	padding: 0;
+}
+
+.enter:focus,
+.enter:hover,
+.enter:active {
+	outline: none;
+}
+
+.enter__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: var(--color-button);
+}
+
+.enter__text {
+	position: relative;
+}
+
+.js .enter {
+	opacity: 0;
+}
+
+.hbd {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	padding: 2rem;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.js .hbd {
+	opacity: 0;
+}
+
+.hbd p {
+	font-size: 2rem;
+	font-size: clamp(1.25rem,6vw,2.15rem);
+	line-height: 1.25;
+	max-width: 900px;
+	margin: 0;
+	pointer-events: none;
+	will-change: transform;
+}
+
+.circles {
+	pointer-events: none;
+	position: fixed;
+	 --dim: 186vmin;
+	width: var(--dim);
+	height: var(--dim);
+	top: calc(50% - var(--dim) / 2 );
+	left: calc(50% - var(--dim) / 2 );
+}
+
+.demo-3 .circles {
+	--dim: 206vmin;
+}
+
+.circles__text {
+	text-transform: uppercase;
+	transform-origin: 700px 700px;
+	will-change: transform, opacity;
+}
+
+.circles__text--1 {
+	font-size: 25vmin;
+	font-size: clamp(170px,25vmin,180px);
+	font-family: var(--font-circle-1);
+	font-weight: var(--font-weight-circle-1);
+	fill: var(--color-text-circle-1);
+}
+
+.circles__text--2 {
+	font-size: 17vmin;
+	font-size: clamp(136px,17vmin,153px);
+	font-family: var(--font-circle-2);
+	font-weight: var(--font-weight-circle-2);
+	fill: var(--color-text-circle-2);
+}
+
+.circles__text--3 {
+	font-size: 13.5vmin;
+	font-size: clamp(110px,13.5vmin,120px);
+	font-family: var(--font-circle-3);
+	font-weight: var(--font-weight-circle-3);
+	fill: var(--color-text-circle-3);
+}
+
+.circles__text--4 {
+	font-size: 9.5vmin;
+	font-size: clamp(85px,9.5vmin,94px);
+	font-family: var(--font-circle-4);
+	font-weight: var(--font-weight-circle-4);
+	fill: var(--color-text-circle-4);
+}
+
+@media screen and (min-width: 53em) {
+	.frame {
+		position: fixed;
+		text-align: left;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: none;
+		height: 100vh;
+		padding: 2rem;
+		pointer-events: none;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'title links'
+							'... ...'
+							'... demos';
+	}
+	.frame__title {
+		margin: 0;
+		grid-area: title;
+	}
+	.frame__menu {
+		grid-area: menu;
+		justify-self: end;
+	}
+	.frame__links {
+		grid-area: links;
+		padding: 0;
+		justify-self: end;
+	}
+	.frame__demos {
+		margin: 0;
+		grid-area: demos;
+		justify-self: end;
+	}
+	.frame a {
+		pointer-events: auto;
+	}
+	.hbd {
+		height: 100vh;
+		justify-content: center;
+		text-align: left;
+	}
+}
+
+
+
+
+
+.fancybox{
+	display: flex;
+      max-width: 1920px;
+      height: 500px;
+      width: 100%;
+	color:black;
+	font-family: "Questrial", sans-serif;
+	background-color: #ffec63;
+	background-image: linear-gradient(
+		45deg,
+		#ffd966 25%,
+		transparent 25%,
+		transparent 75%,
+		#ffd966 75%,
+		#ffd966
+	  ),
+	  linear-gradient(
+		-45deg,
+		#ffd966 25%,
+		transparent 25%,
+		transparent 75%,
+		#ffd966 75%,
+		#ffd966
+	  );
+	background-size: 60px 60px;
+	background-position: 0 0;
+	animation: slide 4s infinite linear;
+  }
+  @keyframes slide {
+	from {
+	  background-position: 0 0;
+	}
+  
+	to {
+	  background-position: -120px 60px;
+	}
+  }
+  
+  .monk{
+	  margin-top: 100px;
+	  height: 60%;
+	  width: 60%;
+	  margin-left:400px;
+  }
+
+  .monkeytitle{
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	text-align: center;
+	font-size:80px;
+	  letter-spacing:0.1em;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+	text-shadow: 
+						  8px 8px #eb004e,
+						  20px 20px #000000;
+}
+
+.thank{
+	display: flex;
+      max-width: 1920px;
+      height: 00px;
+      width: 100%;
+      border-color: rgba(255, 255, 255, 1);
+      border-width: 0px;
+      border-style: solid;
+      background-color: #FFE5B4;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.thank {
+  font-size: calc(20px + 8px);
+  line-height: calc(20px + 10px);
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+.thank {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: rgb(0, 0, 0);
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
